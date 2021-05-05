@@ -1,0 +1,49 @@
+.curved {
+  position: relative;
+  background: #7E35E1;
+  height: 90vh;
+  flex-wrap: wrap;
+  border-bottom-left-radius: 50% 42%;
+  border-bottom-right-radius: 50% 42%;
+}
+.calander {
+  position:absolute;
+  margin-left: -250px; /* very important for the image to be centered */
+  left:45%;
+  bottom:0px;
+  width: 40%;
+  flex-wrap: wrap;
+
+}
+
+.logo {
+  float: left;
+    position: relative;
+    margin: 10px 15px 15px 10px;
+    flex-wrap: wrap;
+}
+
+.myButton {
+	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+	background-color:#44c767;
+	border-radius:19px;
+	border:3px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:28px;
+	font-weight:bold;
+	padding:14px 76px;
+	text-decoration:none;
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-20%, -50%);
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+	background-color:#5cbf2a;
+}

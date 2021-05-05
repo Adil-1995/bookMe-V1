@@ -19,6 +19,13 @@
     "@angular/platform-browser": "~11.2.7",
     "@angular/platform-browser-dynamic": "~11.2.7",
     "@angular/router": "~11.2.7",
+    "@fortawesome/angular-fontawesome": "^0.8.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "angularx-social-login": "^3.5.6",
+    "bootstrap": "^4.6.0",
+    "primeicons": "^4.1.0",
+    "primeng": "^11.4.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"
