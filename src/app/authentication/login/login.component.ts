@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-declare const myLogin: any;
+import { NavigationExtras, Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,14 +8,16 @@ declare const myLogin: any;
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router,
+  ) { }
 
   ngOnInit(): void {
-
   }
 
-  onClick(){
-    myLogin();
+  toPages() {
+    console.log("works");
+    this.router.navigate(['/pages']);
   }
 
 }

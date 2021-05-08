@@ -1,22 +1,41 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { SocialLoginModule, SocialAuthServiceConfig } from 'angularx-social-login';
 import { GoogleLoginProvider } from 'angularx-social-login';
-import { LoginComponent } from './login/login.component';
+
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {ButtonModule} from 'primeng/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+ import {MatToolbarModule} from '@angular/material/toolbar';
+ import {MatIconModule} from '@angular/material/Icon';
+ import {MatSidenavModule} from '@angular/material/Sidenav';
+ import {MatListModule} from '@angular/material/List';
+ import {MatButtonModule} from '@angular/material/Button';
+import { DefaultComponent } from './layouts/default/default.component';
+
+
+
+
+
+
+// import { MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatButtonModule } from  '@angular/material';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    routingComponents,
+    DefaultComponent
+
   ],
   imports: [
     BrowserModule,
@@ -24,7 +43,14 @@ import {ButtonModule} from 'primeng/button';
     ReactiveFormsModule,
     SocialLoginModule,
     FontAwesomeModule,
-    ButtonModule
+    ButtonModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule,
+    MatButtonModule,
+    MatIconModule
+
 
 
   ],
